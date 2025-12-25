@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <%- include('partials/header1.ejs') %>
+    </head>
+    <body style="background-color: rgb(10, 0, 18);">
+        <%- include('partials/navbar4.ejs') %>
+        <div class="container">
+            <h2>Add an Customer</h2>
+            <form method="POST">
+            
+                <label for="id" style="color: rgb(245, 245, 248);">Customer ID</label>
+                <input type="text" id="id" placeholder="Enter Customer ID" name="id">
+            
+                <label for="name" style="color: rgb(245, 245, 248);">Customer Name</label>
+                <input type="text" id="name" placeholder="Enter Customer's name" name="name">
+            
+                <label for="neighbourhood" style="color: rgb(245, 245, 248);">Neighbourhood</label>
+                <input type="text" id="neighbourhood" placeholder="Enter neighbourhood name" name="neighbourhood">
+
+                <label for="pic" style="color: rgb(245, 245, 248);">Pic</label>
+                <input type="text" id="pic" placeholder="Enter your picture url" name="pic">
+
+                <button type="submit">Submit</button>
+        </form>
+    </div>
+    </body>
+</html>
+
+

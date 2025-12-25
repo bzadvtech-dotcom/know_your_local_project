@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <%- include('partials/header1.ejs') %>
+    </head>
+    <body style="background-color: rgb(10, 0, 18);">
+        <%- include('partials/navbar4.ejs') %>
+        <div class="container">
+            <h2>Add a Reaction</h2>
+            <form method="POST">
+            
+                <!---<label for="place id" style="color: rgb(199, 248, 5);">Place ID</label>
+                <input type="text" id="id" placeholder="Enter Place ID" name="place id">--->
+                  <label for="likeID" style="color: rgb(199, 248, 5);">Reaction ID</label>
+                <input type="text" id="name" placeholder="Enter Place's name" name="likeID">
+
+                <label for="placeName" style="color: rgb(199, 248, 5);">Place Name</label>
+                <input type="text" id="placeName" placeholder="Enter Place's name" name="placeName">
+            
+                <label for="reaction" style="color: rgb(199, 248, 5);">What is your reaction?</label>
+                <input type="text" id="reaction" placeholder="Enter your reaction" name="reaction">
+            
+                <button type="submit">Submit</button>
+        </form>
+    </div>
+    </body>
+</html>
+
+

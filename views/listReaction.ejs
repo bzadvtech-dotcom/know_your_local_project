@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <%- include('partials/header1.ejs') %>
+    </head>
+    <body style="background-color: rgb(10, 0, 18);">
+        <%- include('partials/navbar3.ejs') %>
+    <div class="container">
+        <div class ="container">
+            <h3><u>Know Your Local</u> App - List of Reactions To Places</h3>
+<div class ="container">
+            <table>
+                <tr>
+                    <!---<th>ID</th>--->
+                    <p>Current User Location</p>
+<p>  <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509374!2d144.9630579153169!3d-37.81627977975195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d43f1f0f0f1%3A0x5045675218ce6e0!2sMelbourne%20VIC%2C%20Australia!5e0!3m2!1sen!2sau!4v1633938471234!5m2!1sen!2sau" 
+    allowfullscreen="" 
+    loading="lazy">
+  </iframe></p>
+
+
+<table>
+                <tr>
+                    <th>ReactionID</th>
+                    <th>Place</th>
+                    <th>What is your reaction?</th>
+                    <!---<th>Current User Location</th>--->
+                </tr>
+                <% if (ReactionData.length !=0) {var i=1; ReactionData.forEach( function(data) {
+                    %>
+                    <tr>
+                        <!---<td><%=data.id %></td>--->
+                        <td><%=data.likeID %></td>
+                        <td><%=data.placeName %></td>
+                        <td><%=data.reaction %></td>
+                        <!--<td>  Replace the src URL with your desired location
+  <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509374!2d144.9630579153169!3d-37.81627977975195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d43f1f0f0f1%3A0x5045675218ce6e0!2sMelbourne%20VIC%2C%20Australia!5e0!3m2!1sen!2sau!4v1633938471234!5m2!1sen!2sau" 
+    allowfullscreen="" 
+    loading="lazy">
+  </iframe></td>-->
+                    </tr>
+                    <% i++; }) %> <%}%>
+            <tr>
+        </table>
+    </body>
+</html>
+
+

@@ -1,0 +1,90 @@
+h1{
+    color:rgb(247, 248, 244);text-align: center;
+}
+h2{
+    color:rgb(59, 43, 154); text-align: center;
+}
+h3{
+    color:rgb(204, 231, 5); text-align: center;
+}
+h4{
+    color:rgb(239, 9, 239);text-align: center;
+}
+p{
+    color:#f2f1f1;
+}
+body {
+        width: 100%; /* Table stretches to fit window */
+      border-collapse: collapse;
+    background-color: rgb(248, 250, 251);
+}
+
+    .table-container {
+      width: 100%;
+      overflow-x: auto; /* Enables horizontal scroll on small screens */
+    }
+
+/* Set font color for all table text */
+table {
+  width: 100%; /* Table stretches to fit window */
+      border-collapse: collapse;
+
+  color: #f4f1f1; /* dark gray */
+}
+    th, td {
+      padding: 12px;
+      border: 1px solid #555;
+      text-align: center;
+    }
+
+/* Set font color for header cells */
+th {
+  color: rgb(245, 245, 247);
+}
+
+/* Set font color for data cells */
+td {
+  color: rgb(242, 244, 242);
+}
+    tr:nth-child(even) {
+      background-color: #2a2a2a;
+    }
+
+    tr:hover {
+      background-color: #555;
+    }
+
+/* Set font color for a specific row */
+tr.highlight {
+  color: rgb(250, 248, 249);
+}
+    tr:hover {
+      background-color: #555;
+    }
+
+    tr:nth-child(even) {
+      background-color: #2a2a2a;
+    }
+
+/* Set font color for a specific column using nth-child */
+td:nth-child(2) {
+  color: rgb(246, 248, 248);
+}
+
+.img2 {
+    float: right; 
+    max-width: 600px; 
+    margin-left: 20px; 
+}
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  flex: 25%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row {
+  display: flex;
+}
+

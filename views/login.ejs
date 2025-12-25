@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <%- include('partials/header1.ejs') %>
+    </head>   
+    <body style="background-color: rgb(10, 0, 18);">
+        <%- include('partials/navbar4.ejs') %>
+        <div>
+            <h1>Login / Register</h1>
+        <br>
+            <table>
+                <tr>
+                    <!---<th>ID</th>--->
+                    <th>
+        <form action ="/auth" method="post">
+            <input type="text" name="username" placeholder="User Name" id="username" required>
+            <label for="password">
+            </label>
+            <input type="password" name="password" placeholder="Password" id="password" required>
+            <input type="submit" value="Login">
+        </form>
+        </th>
+        </br>
+        <tr>
+        <th><h4><a href="/register">Register</a></h4></th>
+        </tr><table>
+    </div>
+    </body>
+</html>
+
+

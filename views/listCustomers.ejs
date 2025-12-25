@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <%- include('partials/header1.ejs') %>
+    </head>
+    <body style="background-color: rgb(10, 0, 18);">
+        <%- include('partials/navbar3.ejs') %>
+    <div class="container">
+        <div class ="container">
+            <h3> <u>Know Your Local</u> App - List of Customers</h3>
+            <table>
+                <tr>
+                    <th>Pic</th>--->
+                    <th>Name</th>
+                    <th>Neighbourhood</th>
+                </tr>
+                <% if (CustomerData.length !=0) {var i=1; CustomerData.forEach( function(data) {
+                    %>
+                    <tr>
+                        <!---<td><%=data.pic %></td>--->
+                        <td><img src="<%= data.pic %>" alt="<%= data.name %>" width="120" height="auto"></td>
+                        <td><%=data.name %></td>
+                        <td><%=data.neighbourhood %></td>
+                    </tr>
+                    <% i++; }) %> <%}%>
+            </table>
+        </div>
+    </body>
+</html>
+
+

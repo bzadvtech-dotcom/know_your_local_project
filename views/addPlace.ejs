@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <%- include('partials/header1.ejs') %>
+    </head>
+    <body style="background-color: rgb(10, 0, 18);">
+        <%- include('partials/navbar4.ejs') %>
+        <div class="container">
+            <h2>Add a Place</h2>
+            <form method="POST">
+            
+                <label for="id" style="color: rgb(199, 248, 5);">Place ID</label>
+                <input type="text" id="id" placeholder="Enter Place ID" name="id">
+            
+                <label for="name" style="color: rgb(199, 248, 5);">Place Name</label>
+                <input type="text" id="name" placeholder="Enter Place's name" name="name">
+            
+                <label for="reason" style="color: rgb(199, 248, 5);">Why you recommend this place?</label>
+                <input type="text" id="reason" placeholder="Enter the reason" name="reason">
+            
+                <button type="submit">Submit</button>
+        </form>
+    </div>
+    </body>
+</html>
+
+

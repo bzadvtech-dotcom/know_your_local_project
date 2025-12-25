@@ -1,0 +1,98 @@
+<html>
+    <head>
+        <%- include('partials/header1.ejs') %>
+    </head>
+    <body style="background-color: rgb(10, 0, 18);">
+        <%- include('partials/navbar3.ejs') %>
+    <div class="container">
+        <div class ="container">
+            <h3><u>Know Your Local</u> App - List of Places</h3>
+<div class ="container">
+            <table>
+                <tr>
+                    <!---<th>ID</th>--->
+                    <p>Current User Location</p>
+<p>  <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509374!2d144.9630579153169!3d-37.81627977975195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d43f1f0f0f1%3A0x5045675218ce6e0!2sMelbourne%20VIC%2C%20Australia!5e0!3m2!1sen!2sau!4v1633938471234!5m2!1sen!2sau" 
+    allowfullscreen="" 
+    loading="lazy">
+  </iframe></p>
+
+
+
+            <table>
+                <tr>
+                    <!---<th>ID</th>--->
+                    <th>Place</th>
+                    <th>Why you recommend this place?</th>
+                    <!---<th>Current User Location</th>--->
+                </tr>
+                <% if (PlaceData.length !=0) {var i=1; PlaceData.forEach( function(data) {
+                    %>
+                    <tr>
+                        <!---<td><%=data.id %></td>--->
+                        <td><%=data.name %></td>
+                        <td><%=data.reason %></td>
+                        <!--<td>  Replace the src URL with your desired location
+  <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509374!2d144.9630579153169!3d-37.81627977975195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d43f1f0f0f1%3A0x5045675218ce6e0!2sMelbourne%20VIC%2C%20Australia!5e0!3m2!1sen!2sau!4v1633938471234!5m2!1sen!2sau" 
+    allowfullscreen="" 
+    loading="lazy">
+  </iframe></td>-->
+                    </tr>
+                    <% i++; }) %> <%}%>
+            <tr>
+        </table>
+        </div>
+
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+
+<h4>Dynamic Map Based Places Recommended</h4>
+  <table>
+    <thead>
+      <tr>
+        <th>Place</th>
+        <th>Map</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Sydney</td>
+        <td>
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10659.0!2d151.2093!3d-33.8688!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12ae5d8f0f0f0f%3A0x5045675218ce6e0!2sSydney%20NSW%2C%20Australia!5e0!3m2!1sen!2sau!4v1633938471234"
+            allowfullscreen="" loading="lazy">
+          </iframe>
+        </td>
+      </tr>
+      <tr>
+        <td>Auckland</td>
+        <td>
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10659.0!2d174.7633!3d-36.8485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d0d48d5f0f0f0f%3A0x5045675218ce6e0!2sAuckland%2C%20New%20Zealand!5e0!3m2!1sen!2snz!4v1633938471234"
+            allowfullscreen="" loading="lazy">
+          </iframe>
+        </td>
+      </tr>
+      <tr>
+        <td>Melbourne</td>
+        <td>
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10659.0!2d144.9631!3d-37.8136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d43f1f0f0f1%3A0x5045675218ce6e0!2sMelbourne%20VIC%2C%20Australia!5e0!3m2!1sen!2sau!4v1633938471234"
+            allowfullscreen="" loading="lazy">
+          </iframe>
+        </td>
+      </tr>
+
+    </tbody>
+  </table>
+
+
+
+    </body>
+</html>
+
+
